@@ -1,3 +1,0 @@
-class Api::Api
-  
-end
