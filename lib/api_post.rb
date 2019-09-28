@@ -2,6 +2,8 @@
 
 require 'json'
 
+require 'net/http'
+
 class ApiPost
   API_URL = 'https://cleaner.dadata.ru/api/v1/clean/phone'
 
@@ -16,9 +18,9 @@ class ApiPost
   end
 
   def headers(request)
-    request['Authorization'] = 'Token d1665bd9346b792fd1b125b46b0e22800c228743'
+    request['Authorization'] = 'Token ' + ENV['API_KEY']
     request['Content-Type'] = 'application/json'
-    request['X-Secret'] = '74c8204738e31d7b6515d3adbc78a29607745d37'
+    request['X-Secret'] = ENV['SECRET_KEY']
   end
 
   def call
