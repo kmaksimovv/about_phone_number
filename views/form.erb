@@ -5,15 +5,16 @@
   <title>Форма</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
-<body>
-  <div class="wrapper">
-    <h4>Введите номер для получения информаци:</h4>
-    <div>
-      <form action="/show" method="get">
-        <input type="text" name="number" value="<%= params[:number] %>">
-        <input type="submit" value="Hit me!">
-      </form>
+  <body>
+    <div class="wrapper">
+      <a href="https://github.com/kmaksimovv/about_phone_number">ссылка на github</a>
+      <h4>Введите номер для получения информаци:</h4>
+      <div>
+        <form action="/show" method="get">
+          <input type="text" name="number" placeholder="8XXXXXXXXXX" value="<%= params[:number] %>">
+          <input type="submit" value="узнать">
+        </form>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
