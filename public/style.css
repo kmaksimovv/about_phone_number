@@ -1,0 +1,22 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #333;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 150%;
+}
+
+td {
+  text-align: left;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}

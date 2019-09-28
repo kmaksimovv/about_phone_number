@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INFO</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <table class="center" >
+    <tr>
+      <td>Исходный телефон одной строкой</td> 
+      <td><%= @json['source']%></td>
+    </tr> 
+    
+    <tr>
+      <td>Тип телефона</td> 
+      <td><%= @json['type']%></td>
+    </tr>
+
+    <tr>
+      <td>Стандартизованный телефон одной строкой</td> 
+      <td><%= @json['phone']%></td>
+    </tr>
+
+    <tr>
+      <td>Код страны</td> 
+      <td><%= @json['country_code']%></td>
+    </tr>
+
+    <tr>
+      <td>Код страны</td> 
+      <td><%= @json['country_code']%></td>
+    </tr>
+
+    <tr>
+      <td>Код города / DEF-код</td> 
+      <td><%= @json['city_code']%></td>
+    </tr>
+
+    <tr>
+      <td>Локальный номер телефона</td> 
+      <td><%= @json['number']%></td>
+    </tr>
+
+    <tr>
+      <td>Добавочный номер</td> 
+      <td><%= @json['extension']%></td>
+    </tr>
+
+    <tr>
+      <td>Оператор связи (только для России)</td> 
+      <td><%= @json['provider']%></td>
+    </tr>
+
+    <tr>
+      <td>Страна</td> 
+      <td><%= @json['country']%></td>
+    </tr>
+
+    <tr>
+      <td>Регион (только для России)</td> 
+      <td><%= @json['region']%></td>
+    </tr>
+
+    <tr>
+      <td>Город (только для стационарных телефонов)</td> 
+      <td><%= @json['city']%></td>
+    </tr>
+
+    <tr>
+      <td>Часовой пояс города для Росии</td> 
+      <td><%= @json['timezone']%></td>
+    </tr>
+
+    <tr>
+      <td>Признак конфликта телефона с адресом</td> 
+      <td><%= @json['qc_conflict']%></td>
+    </tr>
+
+    <tr>
+      <td>Код проверки</td> 
+      <td><%= @json['qc']%></td>
+    </tr>
+    
+  </table>
+  <div class = "wrapper">
+      <a href="/">Ввести другой номер</a>
+      </div>
+</body>
+</html>
